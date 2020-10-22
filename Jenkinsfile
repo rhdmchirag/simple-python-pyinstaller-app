@@ -4,7 +4,7 @@ pipeline {
         stage('Build') { 
             agent {
                 docker {
-                    image 'frolvlad/alpine-python2' 
+                    image 'python:alpine:3.12' 
                 }
             }
             steps {
